@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> hellooo </title>
+<title> Heading </title>
 </head>
 <body> 
 {% for result in Result %}
