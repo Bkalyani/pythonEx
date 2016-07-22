@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{STATIC_URL}}blog.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		{% for data in Data %}
+		<!-- <input type="submit" value="Add new item"> -->
+		<table border=3; width=150px>
+			<tr>
+			<td>Username(First): {{ data.Name }}<br/>
+			Id: {{ data.Id }}<br/>
+			</td></tr></table>
+		{% endfor %}
+<!-- <input type="submit" value="Edit"></form>
+<form action="removeAll">
+<input type="submit" value="Delete"></form> -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body> 
+{% for result in Result %}
+<form method=get action="http://127.0.0.1:8000/table/">
+<input type="submit" value="Add new item">
+<table border=3; width=150px>
+<tr>
+<td> Name(First): {{ data.first }}
+(Middle) {{ data.middle }}
+Last){{ data.last }}
+Father'sName: {{ data.fathersname }}
+Mother'sName:{{ data.mothersname }}
+DateofBirth:{{ data.dob }}</td>
+</tr>
+</table> 
+</form>
+{% endfor %}
+</body>
+</html>

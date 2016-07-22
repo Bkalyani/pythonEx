@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+	<div style='float:left;width:65%;margin:1%;text-align:left'>
+		<div><h2>Customer Registration<h2></div>
+		<div>
+		<form name="custRegForm" action="insert" method="get" onsubmit="return pwdValidate(this)">
+			 <div style="margin-left:10%">Name(First):<span class="star"><sup>*<sup></span>
+          <span style="margin-left:4px;"><input name="first" type="text" value=""  /></span>
+          <span style="margin-left:3%"> (Middle)<input name="middle" type="text" value=""  /> </span> 
+          <span style="margin-left:6%">(Last)<input name="last" type="text" value=""  /></span>   
+       </div>
+        <div style="margin-top:5px;margin-buttom:5px;">
+         <div style="margin-left:10%">Father'sName:<span style="margin-left:2px;"><input name="fathersname" type="text" value=""  /></span>   
+           <span style="margin-left:3%">Mother'sName:<span class="star"><sup>*<sup></span><input name="mothersname" type="text" value=""  /> </span>
+         </div></div>
+         <div style="margin-top:5px;margin-buttom:5px;">
+         <div style="margin-left:10%;">DateofBirth:<span class="star"><sup>*<sup></span>
+           <span style="margin-left:4px;"><input name="dob" type="text" value=""  /></span>
+         <form method="get" action="http://127.0.0.1:8000/registerSuccess.html">
+           <div style="margin-left:45%;"><button type="submit" >continue</button><span style="margin-left:1%">
+<button type="button">cancel</button></span></div></form>
+		</form>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>

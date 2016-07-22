@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<body> 
+<form name="form1" method="post" action="saveData" >
+	Username<input type="text" class="TextBox"name="UserName" id="tx1"/></br></br>
+        Id<input type="text" style="margin-left:50px;" class="TextBox"name="Id" id="tx1"/></span></br></br>
+	<input style="margin-left:60px;" type="submit" value="submit"></form><br><br></div>
+
+</body>
+</html>
+
+
+
+

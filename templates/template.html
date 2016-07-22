@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>CheckBox</title>
+<script>
+			$('input[type="checkbox"]').mouseenter(function(AndraPradesh,TamilNadu,Karnataka,kerala) { 
+				if ($(this).is(':checked')) {
+					//$(this).prop('checked',false);
+					alert("is checked");
+				} else {
+					//$(this).prop('checked',true);
+					alert("not checked");
+				}
+			});​
+</script>
+</head>
+<body>
+<center>
+	<div style="width:400px; border:solid 2px #999999; margin-top:35px; border-radius:15px; background:skyblue" >
+	
+	<div> <b>Check Box Selected Data</b>  </div><br><br>	
+ 
+   
+    <table>
+		{% for state in sampl %}
+			
+			
+			
+		
+			
+			
+			{%if state.AndraPradesh == "on" %}
+				 <tr><td><input type="checkbox" class="checkBoxClass"name="AndraPradesh" id="Cf1"checked disabled=true/>AndraPradesh </td></tr> 
+			{% else %} 
+				<tr><td><input type="checkbox" class="checkBoxClass"name="AndraPradesh" id="Cf1" disabled=true/>AndraPradesh </td></tr>
+			{% endif %} 
+			{%if state.TamilNadu == "on" %}
+				<tr><td><input type="checkbox" class="checkBoxClass"name="TamilNadu" id="Cf1" checked disabled=true />TamilNadu</td></tr> 
+			{% else %}
+			
+				<tr><td><input type="checkbox" class="checkBoxClass"name="TamilNadu" id="Cf1" disabled=true/>TamilNadu</td></tr> 
+			{% endif %}  
+			{%if state.Karnataka == "on" %} 
+				<tr><td><input type="checkbox" class="checkBoxClass"name="Karnataka" id="Cf1" checked disabled=true />Karnataka </td></tr>
+			{% else %}	
+				<tr><td><input type="checkbox" class="checkBoxClass"name="Karnataka" id="Cf1" disabled=true/>Karnataka </td></tr>
+			{% endif %} 
+			{%if state.Kerala == "on" %} 	 
+				<tr><td><input type="checkbox" class="checkBoxClass"name="Kerala" id="Cf1" checked disabled=true />Kerala</td></tr>
+			{% else %}	
+				<tr><td><input type="checkbox" class="checkBoxClass"name="Kerala" id="Cf1" disabled=true/>Kerala</td></tr>
+			{% endif %} 
+		{% endfor %} 
+		
+    <tr align="center">
+    <td>
+		
+        <p align="center">Thank you!</p> <br /></td>
+      </tr>
+     
+      </tr>
+    </div>
+    </table>
+  </div>
+</center>
+</body>
+</html>

@@ -1,0 +1,13 @@
+#from settings import *
+import settings
+from django.db import models
+from djangotoolbox.fields import ListField, EmbeddedModelField
+from django import forms
+
+class Cls(models.Model):
+	Name = models.TextField(null=True)
+	Id = models.TextField(null=True)
+	
+	def __unicode__(self):
+		return self.Name
+		
